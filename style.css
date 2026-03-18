@@ -1,0 +1,99 @@
+:root {
+    --bg: #09090b;
+    --card: #141419;
+    --primario: #22c55e;
+    --text: #fafafa;
+    --text-dim: #a1a1aa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header & Nav */
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 10%; 
+    border-bottom: 1px solid #27272a;
+}
+
+a { 
+    color: var(--text); 
+    text-decoration: none; 
+    margin: 20px; 
+    transition: 0.3s;
+}
+i { 
+    color: var(--primario);
+    margin: 15px;
+}
+
+.logo span { 
+    color: var(--primario); 
+}
+.hero { 
+    height: 50vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+/* Grid de Projetos */
+.grid-projetos { 
+    display: flex; 
+    gap: 20px; 
+    padding: 40px 10%; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.card { 
+    background: var(--card); 
+    border: 1px solid #27272a; 
+    padding: 30px; 
+    border-radius: 15px; 
+    width: 350px; 
+    transition: 0.4s; 
+    text-align: center;
+}
+.card:hover { 
+    border-color: var(--primario); 
+    transform: translateY(-10px); 
+}
+.icon-card { 
+    font-size: 30px; 
+    color: var(--primario); 
+    margin-bottom: 15px; 
+}
+
+/* Animação JavaScript CSS */
+#typing-text { 
+    border-right: 2px solid var(--primario); 
+    padding-right: 5px; 
+    color: var(--primario); 
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .grid-projetos { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .card { 
+        width: 100%; 
+    }
+    .hero h1 { 
+        font-size: 24px; 
+    }
+}
