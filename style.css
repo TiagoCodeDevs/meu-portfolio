@@ -50,6 +50,11 @@ i {
     text-align: center; 
 }
 
+h2 {  
+    display: flex;
+    justify-content: center;
+}
+
 /* Grid de Projetos */
 .grid-projetos { 
     display: flex; 
