@@ -59,7 +59,10 @@ i {
 }
 
 .hobbies {
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -84,11 +87,13 @@ i {
 .grid-projetos { 
     display: flex;
     flex-direction: row;
-    gap: 20px; 
-    padding: 40px 0; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 40px 0;
     justify-content: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card { 
@@ -97,7 +102,6 @@ i {
     padding: 30px; 
     border-radius: 15px; 
     flex: 1 1 350px;
-    max-width: 450px;
     transition: 0.4s; 
     text-align: center;
     display: flex;
@@ -140,10 +144,10 @@ footer {
 .social-link a {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     margin: 0;
-    font-size: 16px;
-    transition: 0.3s;
+    text-decoration: none;
+    color: var(--text);
 }
 
 .social-link i {
