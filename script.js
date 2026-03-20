@@ -1,5 +1,5 @@
 const textElement = document.getElementById('typing-text');
-const professions = ["Front-end", "em ADS", "Python"];
+const professions = ["Front-end", "em ADS", "Python", "Acessível"];
 let profIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
